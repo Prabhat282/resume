@@ -2,6 +2,10 @@ h1{
     font-size: 1.7rem;
     color: #fff;
 }
+p{
+    font-size: 1.3rem;
+    color: #fff;
+}
 .navbar{
     /* background-color: #FFD4D4; */
     background-color: #91D8E4;
