@@ -72,34 +72,9 @@ height="90px"></a>
     <a class="social-icon fa-solid fa-envelope"></a>
     <p class="copyright">© copyright 2023 Prabhat ❤️❤️</p>
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script>
-    var typingEffect=new Typed(".multitext",{
-        strings:["Student. ^1000","Programmer. ^1000","Developer. ^1000","Coder. ^1000"],
-        loop:true,
-        typespeed:1,
-        backspeed:80,
-        backDelay:1600
-    })
-</script>
-
-<script>
-    window.addEventListener('scroll',reveal());
     
-    function reveal(){
-        var reveals = document.querySelectorAll('.reveal');
-        for(var i=0;i< reveals.length;i++){
-            var windowheight=window.innerHeight;
-            var revealtop=reveals[i].getBoundingClientRect().top;
-            var revealpoint=150;
-            if(revealtop<windowheight-revealpoint){
-                reveals[i].classList.add('active');
-            }
-            else{
-                reveals[i].classList.remove('active');
-            }
-        }
-    }
-</script>
+<!-- JavaScripts -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="Index.js"></script>
 </body>
 </html>
