@@ -9,6 +9,7 @@ icon.onclick=function(){
     else{
         icon.classList.remove("fa-sun");
         icon.classList.add("fa-moon");
+        document.body.style.backgroundColor="#fff"
     }
     if(icon.src=="Images/moon.png"){
         document.getElementById("theme-icon").style("backgroundColor:")

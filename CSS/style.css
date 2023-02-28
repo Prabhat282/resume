@@ -1,9 +1,7 @@
-body{
-    
-}
+
 :root{
-    --maincolour:#91D8E4;
-    --social-icon-colour:#000;    
+    --maincolour:#E3FDFD;
+    --blackwhite:#000;    
     --skills-color:#fff;
 }
 .theme-container{
@@ -17,7 +15,8 @@ body{
     height: 35px;
     width: 35px;
     text-align: center;
-    padding: 6px;
+    padding: 4px;
+    border: 2px solid rgb(82, 72, 72);
     border-radius: 68%;
     
 }
@@ -34,13 +33,14 @@ body{
 }
 .dark-theme{
     --maincolour:#000;
-    --social-icon-colour:#fff;
+    --blackwhite:#fff;
     --skills-color:#000;
 }
 /* Heading-Files */
 h1{
     font-size: 1.7rem;
-    color: #fff;
+    color: var(--blackwhite);
+    
 }
 h3{
     color: #6096B4;
@@ -51,13 +51,14 @@ p{
 }
 
 /* Navbar */
+
 .navbar{
     background-color: var(--maincolour);    
 }
 .link-text{
     font-family: "Montserrat",sans-serif;
     font-size: 1.25rem;
-    color: #fff;
+    color: var(--blackwhite);
     position: relative;
     text-decoration: none;
 }
@@ -79,7 +80,22 @@ p{
     color: #6096B4;
 }
 .search-button{
-    color: var(--social-icon-colour);
+    color: var(--blackwhite);
+}
+.intro1{
+    text-align: center;
+}
+.I-m{
+    font-family: 'Sacramento',cursive;
+    font-size: 5.65rem;
+    color: #66BFBF;
+    background-color: var(--maincolour);
+    margin-bottom: 0px;
+}
+.a-student{
+    background-color: var(--maincolour);
+    color: #66BFBF;
+    margin-bottom: 0px;
 }
 /* Title */
 .title{
@@ -89,8 +105,6 @@ p{
 }
 .name{
     font-size: 3rem;
-    /* color: #fff; */
-    /* color: #ccd6f6; */
     color: #6096B4;
     font-weight: bold;
 }
@@ -213,7 +227,7 @@ p{
     font-size: 2rem;
     margin: 20px 10px;
     text-decoration: none;
-    color: var(--social-icon-colour);
+    color: var(--blackwhite);
 }
 .fa-facebook-f:hover{
     color: #3b5998;
