@@ -8,34 +8,6 @@
     background-color: var(--maincolour);
     text-align: right;
 }
-#theme-icon{
-    background: #fff;
-    font-size: 1.5rem;
-    margin-right: 7%;
-    height: 35px;
-    width: 35px;
-    text-align: center;
-    padding: 4px;
-    border: 2px solid rgb(82, 72, 72);
-    border-radius: 68%;
-    
-}
-.darkicon{
-    background: #fff;
-    font-size: 1.5rem;
-    margin-right: 7%;
-    height: 35px;
-    width: 35px;
-    text-align: center;
-    padding: 6px;
-    border-radius: 68%;
-    
-}
-.dark-theme{
-    --maincolour:#000;
-    --blackwhite:#fff;
-    --skills-color:#000;
-}
 /* Heading-Files */
 h1{
     font-size: 1.7rem;
@@ -96,6 +68,28 @@ p{
     background-color: var(--maincolour);
     color: #66BFBF;
     margin-bottom: 0px;
+}
+.land-container{
+    background-color: var(--maincolour);
+}
+.land{
+    /* background-color: var(--maincolour); */
+    max-width: 800px;
+    margin: 0px auto;
+    padding-top: 3%;
+}
+.land-img{
+    width: 100%;
+}
+.cloud-right-container{
+    background-color: var(--maincolour);
+}
+.cloud-left-container{
+    background-color: var(--maincolour);
+}
+.about-me-container{
+    background-color: var(--skills-color);
+    text-align: center;
 }
 /* Title */
 .title{
@@ -266,4 +260,35 @@ p{
  .certificates-img{
     margin-bottom: 4%;
  }
+}
+/* Dark-Light Theme */
+#theme-icon {
+    background: #fff;
+    font-size: 1.5rem;
+    margin-right: 7%;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    padding: 4px;
+    border: 2px solid rgb(82, 72, 72);
+    border-radius: 68%;
+
+}
+
+.darkicon {
+    background: #fff;
+    font-size: 1.5rem;
+    margin-right: 7%;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    padding: 6px;
+    border-radius: 68%;
+
+}
+
+.dark-theme {
+    --maincolour: #000;
+    --blackwhite: #fff;
+    --skills-color: #000;
 }
