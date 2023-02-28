@@ -19,9 +19,16 @@ h3{
 }
 p{
     font-size: 1.3rem;
-    color: #fff;
+    color: var(--blackwhite);
 }
-
+hr{
+    border-style: none;
+    border-top-style: dotted;
+    border-color: #01fefe;
+    border-width: 7px;
+    width: 80px;
+    margin: 100px auto;
+}
 /* Navbar */
 
 .navbar{
@@ -57,6 +64,8 @@ p{
 .intro1{
     text-align: center;
 }
+
+/* About me in html with images */
 .I-m{
     font-family: 'Sacramento',cursive;
     font-size: 5.65rem;
@@ -73,7 +82,6 @@ p{
     background-color: var(--maincolour);
 }
 .land{
-    /* background-color: var(--maincolour); */
     max-width: 800px;
     margin: 0px auto;
     padding-top: 3%;
@@ -83,13 +91,31 @@ p{
 }
 .cloud-right-container{
     background-color: var(--maincolour);
+    position:absolute;
+    right: 15%;
 }
 .cloud-left-container{
     background-color: var(--maincolour);
+    position:absolute;
+    left: 15%;;
+}
+#about-me-with-images{
+    margin-bottom: 5%;
 }
 .about-me-container{
     background-color: var(--skills-color);
     text-align: center;
+}
+.introduction{
+    max-width: 350px;
+    margin: 0 auto;
+}
+.my-description{
+    margin-top: 20px;
+    /* margin-bottom: 10px; */
+}
+.hi{
+    color: #66BFBF;
 }
 /* Title */
 .title{
@@ -113,7 +139,7 @@ p{
     opacity: 1;
 }
 .intro{
-    color: #6096B4;
+    color: #66BFBF;
 }
 
 /* Certificates.html */
@@ -171,9 +197,6 @@ p{
     color: #6096B4;
 }
 .course-name{
-    /* color: #0081C9; */
-    /* color: #82AAE3; */
-    /* color: #ADA2FF; */
     color: #F56EB3;
     font-weight: bold;
 }
@@ -200,8 +223,6 @@ p{
     margin-bottom: 3%;
 }
 .information{
-    /* color:#CB1C8D; */
-    /* color: #A460ED; */
     color: #1C3879;
     font-size: 1.3rem;
 }
@@ -260,6 +281,11 @@ p{
  .certificates-img{
     margin-bottom: 4%;
  }
+}
+@media screen and (max-width:1200px){
+    .cloud-left-container,.cloud-right-container{
+        display: none;
+    }
 }
 /* Dark-Light Theme */
 #theme-icon {
