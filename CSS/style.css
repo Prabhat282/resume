@@ -1,4 +1,42 @@
-
+body{
+    
+}
+:root{
+    --maincolour:#91D8E4;
+    --social-icon-colour:#000;    
+    --skills-color:#fff;
+}
+.theme-container{
+    background-color: var(--maincolour);
+    text-align: right;
+}
+#theme-icon{
+    background: #fff;
+    font-size: 1.5rem;
+    margin-right: 7%;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    padding: 6px;
+    border-radius: 68%;
+    
+}
+.darkicon{
+    background: #fff;
+    font-size: 1.5rem;
+    margin-right: 7%;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    padding: 6px;
+    border-radius: 68%;
+    
+}
+.dark-theme{
+    --maincolour:#000;
+    --social-icon-colour:#fff;
+    --skills-color:#000;
+}
 /* Heading-Files */
 h1{
     font-size: 1.7rem;
@@ -14,11 +52,7 @@ p{
 
 /* Navbar */
 .navbar{
-    background-color: #91D8E4;
-    /* background-color: #FFD4D4; */
-    /* background-color: #09192f; */
-    /* background-color: #f2afe5; */
-    
+    background-color: var(--maincolour);    
 }
 .link-text{
     font-family: "Montserrat",sans-serif;
@@ -26,7 +60,6 @@ p{
     color: #fff;
     position: relative;
     text-decoration: none;
-    /* color: #b7c1e0; */
 }
 .link-text:after{
     opacity: 0;
@@ -45,10 +78,13 @@ p{
 .link-text:hover {
     color: #6096B4;
 }
+.search-button{
+    color: var(--social-icon-colour);
+}
 /* Title */
 .title{
     padding: 7% 8.5%;
-    background-color:#91D8E4;
+    background-color:var(--maincolour);
     padding-top: 3rem;
 }
 .name{
@@ -74,7 +110,7 @@ p{
 
 /* Certificates.html */
 #certificates{
-    background-color: #91D8E4;
+    background-color: var(--maincolour);
     padding-top: 3%;
 }
 .c-heading h1{
@@ -94,6 +130,7 @@ p{
 #Education{
     /* background-color: #91D8E4; */
     padding: 4% 8.5%;
+    background-color: var(--skills-color);
    
 }
 .Heading{
@@ -139,6 +176,7 @@ p{
 /* Skills */
 #Skills{
     padding-top: 4%;
+    background-color: var(--skills-color);
 }
 .skills{
     text-align: left;
@@ -167,7 +205,7 @@ p{
 }
 /* footer */
 #footer{
-    background-color: #91d8e4;
+    background-color: var(--maincolour);
     padding: 7% 15%;
     text-align: center;
 }
@@ -175,7 +213,7 @@ p{
     font-size: 2rem;
     margin: 20px 10px;
     text-decoration: none;
-    color: black;
+    color: var(--social-icon-colour);
 }
 .fa-facebook-f:hover{
     color: #3b5998;
