@@ -380,3 +380,10 @@ color: white;
 .copyright{
     color: #F56EB3;
 }
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
