@@ -1,7 +1,7 @@
 var icon=document.getElementById("theme-icon");
 icon.onclick=function(){
     document.body.classList.toggle("dark-theme");
-    if(document.body.classList.contains("dark-theme")){
+    if($("body").classList.contains("dark-theme")){
         icon.classList.remove("fa-moon");
         icon.classList.add("fa-sun");
         document.body.style.backgroundColor="#000";

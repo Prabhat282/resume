@@ -1,4 +1,7 @@
-
+*{
+    margin: 0px;
+    padding: 0px;
+}
 :root{
     --maincolour:#E3FDFD;
     --blackwhite:#000;    
@@ -14,20 +17,28 @@ h1{
     color: var(--blackwhite);
     
 }
-h3{
-    color: #6096B4;
-}
-p{
+p {
     font-size: 1.3rem;
     color: var(--blackwhite);
+    font-family: 'Poppins', sans-serif;
 }
-hr{
+hr {
     border-style: none;
     border-top-style: dotted;
     border-color: #01fefe;
     border-width: 7px;
     width: 80px;
     margin: 100px auto;
+}
+.pages-button{
+    background-color: #66BFBF;
+}
+.pages-button:hover{
+    background-color: #20dada;
+}
+.pages-link{
+text-decoration: none;
+color: white;
 }
 /* Navbar */
 
@@ -61,9 +72,7 @@ hr{
 .search-button{
     color: var(--blackwhite);
 }
-.intro1{
-    text-align: center;
-}
+/*  */
 
 /* About me in html with images */
 .I-m{
@@ -72,6 +81,9 @@ hr{
     color: #66BFBF;
     background-color: var(--maincolour);
     margin-bottom: 0px;
+}
+.intro1 {
+    text-align: center;
 }
 .a-student{
     background-color: var(--maincolour);
@@ -99,6 +111,7 @@ hr{
     position:absolute;
     left: 15%;;
 }
+/* About me pages */
 #about-me-with-images{
     margin-bottom: 5%;
 }
@@ -112,31 +125,16 @@ hr{
 }
 .my-description{
     margin-top: 20px;
-    /* margin-bottom: 10px; */
 }
 .hi{
     color: #66BFBF;
 }
+
 /* Title */
-.title{
-    padding: 7% 8.5%;
-    background-color:var(--maincolour);
-    padding-top: 3rem;
-}
 .name{
     font-size: 3rem;
     color: #6096B4;
     font-weight: bold;
-}
-.reveal{
-    position: relative;
-    transform: translateX(150px);
-    opacity: 0;
-    transition: all 1s ease;
-}
-.reveal.active{
-    transform: translateX(0px);
-    opacity: 1;
 }
 .intro{
     color: #66BFBF;
@@ -150,7 +148,7 @@ hr{
 .c-heading h1{
     text-align: center;
     font-size: 3rem;
-    color: #A084DC;
+    color: #f460a3;
 }
 .certificates-heading{
     margin-bottom: 2.5rem;
@@ -161,6 +159,11 @@ hr{
     color: #6096B4;
 }
 /* About-Html */
+.title {
+    padding: 7% 8.5%;
+    background-color: var(--maincolour);
+    padding-top: 3rem;
+}
 #Education{
     /* background-color: #91D8E4; */
     padding: 4% 8.5%;
@@ -204,7 +207,7 @@ hr{
     padding-top: 5%;
 }
 
-/* Skills */
+/* Skills About.html*/
 #Skills{
     padding-top: 4%;
     background-color: var(--skills-color);
@@ -231,33 +234,6 @@ hr{
     float: right;
     margin-left: 5%;
     margin-bottom: 3%;
-}
-/* footer */
-#footer{
-    background-color: var(--maincolour);
-    padding: 7% 15%;
-    text-align: center;
-}
-.social-icon{
-    font-size: 2rem;
-    margin: 20px 10px;
-    text-decoration: none;
-    color: var(--blackwhite);
-}
-.fa-facebook-f:hover{
-    color: #3b5998;
-}
-.fa-instagram:hover{
-    color: #c13087;
-}
-.fa-discord:hover{
-    color: #5865F2;
-}
-.fa-envelope:hover{
-    color: rgb(232, 232, 176);
-}
-.copyright{
-    color: #F56EB3;
 }
 .navbar-toggler{
     color: white;
@@ -317,4 +293,90 @@ hr{
     --maincolour: #000;
     --blackwhite: #fff;
     --skills-color: #000;
+}
+
+.box {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+}
+
+.box::before {
+    content: ' ';
+    position: absolute;
+    inset: -10px 140px;
+    background: linear-gradient(315deg, #00ccff, #d400d4);
+    transition: 0.5s;
+    animation: animate 4s linear infinite;
+}
+/* .box:hover::before{ 
+     inset:-20px 0px; 
+ } */
+.box::before {
+    inset: -20px 0px;
+}
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.box::after {
+    content: '';
+    position: absolute;
+    inset: 6px;
+    background: #fff;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.content {
+    position: absolute;
+    inset: 10px;
+    border: 6px solid #fff;
+    z-index: 3;
+    border-radius: 50%;
+}
+.content img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+/* footer */
+#footer{
+    background-color: var(--maincolour);
+    padding: 7% 15%;
+    text-align: center;
+}
+.social-icon{
+    font-size: 2rem;
+    margin: 20px 10px;
+    text-decoration: none;
+    color: var(--blackwhite);
+}
+.fa-facebook-f:hover{
+    color: #3b5998;
+    
+}
+.fa-instagram:hover{
+    color: #c13087;
+}
+.fa-discord:hover{
+    color: #5865F2;
+}
+.fa-envelope:hover{
+    color: rgb(232, 232, 176);
+}
+.copyright{
+    color: #F56EB3;
 }

@@ -5,7 +5,7 @@ var typingEffect = new Typed(".multitext", {
     backspeed: 80,
     backDelay: 1600
 })
-window.addEventListener('scroll', reveal());
+$("window").addEventListener('scroll', reveal());
 function reveal() {
     var reveals = document.querySelectorAll('.reveal');
     for (var i = 0; i < reveals.length; i++) {
